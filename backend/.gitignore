@@ -1,0 +1,22 @@
+# Backend-specific ignores (in addition to root .gitignore)
+
+# Local environment overrides
+.env.backup
+
+# Prisma Studio cache
+.prisma/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Local development databases
+*.db-shm
+*.db-wal
+
+# PM2 process manager
+.pm2/
+ecosystem.config.js
+
+# Local uploads (if any)
+uploads/
+temp-uploads/

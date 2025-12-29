@@ -1,0 +1,139 @@
+# ============================================
+# PROJECT PLANNING (DO NOT COMMIT)
+# ============================================
+info/
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+.pnp
+.pnp.js
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ============================================
+# BUILD OUTPUTS
+# ============================================
+
+# Backend
+backend/dist/
+backend/build/
+
+# Frontend
+frontend/dist/
+frontend/build/
+
+# Other build outputs
+.next/
+out/
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# ============================================
+# TESTING
+# ============================================
+coverage/
+*.coverage
+.nyc_output/
+junit.xml
+
+# ============================================
+# BACKEND SPECIFIC
+# ============================================
+
+# Prisma generated client (DO NOT COMMIT)
+backend/node_modules/.prisma/
+backend/prisma/generated/
+
+# Keep migrations - they should be committed!
+# backend/prisma/migrations/ <- DO NOT IGNORE
+
+# Database files (local development)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ============================================
+# FRONTEND SPECIFIC
+# ============================================
+
+# Vite
+frontend/.vite/
+frontend/vite.config.ts.timestamp-*
+
+# Build cache
+frontend/.cache/
+.vite/
+
+# ============================================
+# IDE / EDITORS
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# OS SPECIFIC
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================
+# CLOUD & DEPLOYMENT
+# ============================================
+
+# Azure
+.azure/
+*.publishsettings
+
+# Docker
+.dockerignore
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# ============================================
+# MISC
+# ============================================
+.turbo
+.eslintcache

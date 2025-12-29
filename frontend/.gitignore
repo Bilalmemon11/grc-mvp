@@ -1,0 +1,21 @@
+# Frontend-specific ignores (in addition to root .gitignore)
+
+# Local environment overrides
+.env.backup
+
+# Vite temporary files
+vite.config.*.timestamp-*
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Storybook (if added later)
+storybook-static/
+
+# Build stats
+stats.html
+bundle-stats.json
+
+# Local test results
+test-results/
+playwright-report/
