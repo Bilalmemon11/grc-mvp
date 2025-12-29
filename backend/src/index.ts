@@ -4,6 +4,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
+import authRoutes from './routes/auth.routes';
+import frameworkRoutes from './routes/framework.routes';
 
 // Load environment variables
 dotenv.config();
@@ -47,13 +49,19 @@ app.get('/health', (_req, res) => {
   });
 });
 
-// API routes will be added here
+// API routes
 app.get('/api', (_req, res) => {
   res.json({
     message: 'GRC Platform API',
     version: '1.0.0',
   });
 });
+
+// Auth routes
+app.use('/api/auth', authRoutes);
+
+// Framework routes
+app.use('/api/frameworks', frameworkRoutes);
 
 // 404 handler
 app.use((_req, res) => {

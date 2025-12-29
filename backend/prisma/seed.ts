@@ -70,7 +70,7 @@ async function main(): Promise<void> {
     },
   });
 
-  const complianceManagerRole = await prisma.role.upsert({
+  await prisma.role.upsert({
     where: { name: 'Compliance Manager' },
     update: {},
     create: {
@@ -79,7 +79,7 @@ async function main(): Promise<void> {
     },
   });
 
-  const riskManagerRole = await prisma.role.upsert({
+  await prisma.role.upsert({
     where: { name: 'Risk Manager' },
     update: {},
     create: {
@@ -88,7 +88,7 @@ async function main(): Promise<void> {
     },
   });
 
-  const auditorRole = await prisma.role.upsert({
+  await prisma.role.upsert({
     where: { name: 'Auditor' },
     update: {},
     create: {
@@ -97,7 +97,7 @@ async function main(): Promise<void> {
     },
   });
 
-  const viewerRole = await prisma.role.upsert({
+  await prisma.role.upsert({
     where: { name: 'Viewer' },
     update: {},
     create: {
